@@ -1,0 +1,508 @@
+/*RESET CSS BEGIN*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/*RESET CSS END*/
+
+
+/*HELPER CLASS BEGIN*/
+
+img {
+    max-width: 100%;
+}
+
+.alignLeft {
+    float: left;
+}
+
+.alignRight {
+    float: right;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+em,
+i {
+    font-style: Scheherazade;
+}
+
+p,
+ul li,
+ol li {
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 20px 0;
+}
+
+ul li,
+ol li {
+    margin-bottom: 10px;
+}
+
+
+/*HELPER CLASS END*/
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+    font-family: 'Arbutus', cursive;
+    font-family: 'Scheherazade', serif;
+}
+
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* NAV BAR + HEADER STYLE START*/
+
+header {
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+    font-family: Arbutus;
+}
+
+header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-200%);
+    background: #01212c;
+    opacity: 0.7;
+    transition: 0.2s;
+    z-index: 5;
+}
+
+body.scroll header.sticky {
+    transform: translateY(0);
+}
+
+header .logo img {
+    max-width: 100px;
+}
+
+.nav-wrapper {
+   max-width: 1200px; 
+   margin: auto;
+   position: relative;
+   padding: 7px 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 10px;
+    margin-bottom: 0;  
+}
+
+nav ul li a {
+    font-size: 17px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #dae8fa;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 3px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid #dae8fa;
+}
+
+/* PARALLAX PAGE STYLES START*/
+
+.cover-main {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-photo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
+
+ul#scene li.name {
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+    color: #dae8fa;
+    width: 100%;
+    font-family: Arbutus;
+}
+
+ul#scene li.title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+    color: #dae8fa;
+    width: 100%;
+    margin-top: 60px;
+    font-family: Arbutus;
+}
+
+ul#scene {
+    margin-top: 50px;
+}
+
+.btn-main {
+    width: 100%;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.portfolio-btn,
+.contact-btn {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #dae8fa;
+    background: transparent;
+    color: #dae8fa;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+.portfolio-btn:hover,
+.contact-btn:hover {
+    background: #dae8fa;
+    color: #01212c;
+} 
+
+.portfolio-btn {
+    margin-right: 30px;
+}
+
+.contact-btn {
+    margin-left: 30px;
+}
+
+/* PARALLAX PAGE STYLES END*/
+
+/* MASONRY JS STYLES START*/
+
+.masonry-grid {
+    position: relative;
+}
+
+.grid {
+    margin: 0 auto;
+}
+
+.grid-item {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+
+h2.sub-title {
+    position: relative;
+    display: block;
+    margin: 70px auto;
+    text-align: center;
+    font-size: 35px;
+    line-height: 40px;
+
+}
+
+h2.sub-title::after {
+    display: block;
+    height: 2px;
+    background-color:#01212c;
+    content: "";
+    width: 300px;
+    margin: 30px auto 0 auto;
+}
+
+/* MASONRY JS STYLES END*/
+
+/* I LOVE SEAFORD ANIMATION START*/
+
+section.beating-heart {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/hero-photo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    padding: 50px 10px;
+    color: #dae8fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+section.beating-heart span {
+    font-size: 100px;
+    line-height: 105px;
+    font-family: Arbutus;
+}
+
+section.beating-heart.sub-title h2 {
+    margin-bottom: 30px;
+}
+
+section.beating-heart p {
+    font-size: 20px;
+}
+
+.beating-heart h2.sub-title::after {
+    background: #dae8fa;
+}
+
+
+.heart {
+    position: relative;
+    width: 70px;
+    margin: 0 50px;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    
+    0% {
+        transform: scale(1);    
+    }
+    15% {
+        transform: scale(1.25); 
+    }
+    25% {
+        transform: scale(1.15);    
+    }
+    35% {
+        transform: scale(1.25);    
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* I LOVE SEAFORD ANIMATION END*/
+
+/* SLIDER START */
+
+.slider-div h2 {
+    margin-bottom: 0;
+}
+
+.slider {
+    margin: 20px, auto;
+    text-align: center;
+    padding: 20px;
+    color: #dae8fa;
+}
+
+.slide {
+    max-height: 500px;
+    padding: 15px;
+}
+
+.slick-prev, 
+.slick-next {
+    background: #01212c;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+}
+
+.slick-prev {
+    left: 0
+}
+
+.slick-next {
+    right: 0;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    background: #01212c;
+}
+
+/* SLIDER END */
+
+/* FOOTER START*/
+footer {
+    position: relative;
+    z-index: -2;
+    height: 80px;
+    background: #01212c;
+    text-align: center;
+}
+ footer h1 {
+     position: absolute;
+     color: #dae8fa;
+     font-family: Arbutus;
+     bottom: 20px;
+     left: 50%;
+     transform: translate(-50%);
+     width: 800px;
+ }
+
+
+/* FOOTER END*/
+
+
+
+
+
+
+
