@@ -225,6 +225,7 @@ nav ul li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     height: 60vh;
+    margin-bottom: 40px;
 }
 
 ul#scene li.name {
@@ -283,6 +284,17 @@ ul#scene {
     margin-left: 30px;
 }
 
+.community h1 {
+    font-family: 'Scheherazade', serif;
+    margin: 0 150px;
+    font-size: 40px;
+    line-height: 45px;
+    color: #dae8fa;
+    text-decoration: none;
+    text-align: center;
+
+}
+
 /* PARALLAX PAGE STYLES END*/
 
 /* MASONRY JS STYLES START*/
@@ -292,7 +304,7 @@ ul#scene {
 }
 
 .grid {
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
 }
 
 .grid-item {
@@ -304,6 +316,7 @@ ul#scene {
 h2.sub-title {
     position: relative;
     display: block;
+    color: #01212c;
     margin: 70px auto;
     text-align: center;
     font-size: 35px;
@@ -325,16 +338,16 @@ h2.sub-title::after {
 /* I LOVE SEAFORD ANIMATION START*/
 
 section.beating-heart {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/hero-photo.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/IMG_7176[1].jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
     text-align: center;
     padding: 50px 10px;
     color: #dae8fa;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: self-start;
     align-self: center;
 }
 
@@ -350,6 +363,7 @@ section.beating-heart.sub-title h2 {
 
 section.beating-heart p {
     font-size: 20px;
+    padding: 80px 40px;
 }
 
 .beating-heart h2.sub-title::after {
@@ -403,7 +417,7 @@ section.beating-heart p {
 }
 
 .slide {
-    max-height: 500px;
+    max-height: 700px;
     padding: 15px;
 }
 
@@ -426,6 +440,14 @@ section.beating-heart p {
 .slick-prev:hover,
 .slick-next:hover {
     background: #01212c;
+}
+
+.slide p {
+    color:#01212c;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px;
+    margin: 25px auto;
 }
 
 /* SLIDER END */
