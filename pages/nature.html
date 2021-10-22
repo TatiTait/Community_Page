@@ -33,10 +33,25 @@
             </nav>       
             <div class="menu-trigger js-menu-trigger"></div>
         </header>
+        <div class="wrapper">
+            <ul id="scene" 
+                data-invert-x="false"
+                data-invert-y="false"
+                data-scalar-x="7"
+                data-scalar-y="7"
+                data-friction-x="0.2"
+                data-friction-y="0.2"
+                data-origin-x="0.5"
+                data-origin-y="0.5">
+                <li class="layer name community" data-depth="0.90">
+                    <h1>Beach, wetland, creek, and lots of animals are bringing tranquility to our life</h1>
+                </li>
+            </ul>
+        </div>
     </section>
     
     <section class="masonry-grid" id="work">
-        <h2 class="sub-title">Nature</h2>
+        <h2 class="sub-title">Gallery</h2>
         <div class="grid">
           <div class="grid-item"><img src="../images/galahs.jpg" alt=""></div>
           <div class="grid-item"><img src="../images/possum111.PNG" alt=""></div>
@@ -60,10 +75,16 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+    <script src="../scripts/imagesLoaded.js"></script>
+    <script src="../scripts/parallax.min.js"></script>  
     <script src="../scripts/masonry.js"></script>
+    <script src="../scripts/masonry2.js"></script>
     <script src="../scripts/slick.min.js"></script>
     <script src="../scripts/main.js"></script>
-
+    <script>
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    </script>
 
 </body>
 

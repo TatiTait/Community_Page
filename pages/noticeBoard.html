@@ -8,8 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arbutus&family=Scheherazade&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/slick.css">
-    <link rel="stylesheet" href="../css/slick-theme.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
 
@@ -27,63 +25,49 @@
                     <ul class="menu">
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="community.html">Community</a></li>
-                        <li><a href="beachAndWetland.html">Beach&Wetland</a></li>
+                        <li><a href="nature.html">Nature</a></li>
                     </ul>
                 </div>
             </nav>       
             <div class="menu-trigger js-menu-trigger"></div>
         </header>
-    </section>
-    
-    <div class="slider-div" id="slider">
-        <h2 class="sub-title">Gallery</h2>
-        <div class="slider">
-            <div class="slide">
-                <img src="../images/IMG_7652[1].jpg" alt="" class="img-responsive">
-            </div>
-            <div class="slide">
-                <img src="../images/IMG_6374[1].jpg" alt="" class="img-responsive">
-            </div>
-            <div class="slide">
-                <img src="../images/IMG_6378[1].jpg" alt="" class="img-responsive">
-            </div>
-            <div class="slide">
-                <img src="../images/IMG_6385.jpg" alt="" class="img-responsive">
-            </div>
-            <div class="slide">
-                <img src="../images/IMG_7204[1].jpg" alt="" class="img-responsive">
-            </div>
-            <div class="slide">
-                <img src="../images/IMG_8098[1].jpg" alt="" class="img-responsive">
-            </div>
-            <div class="slide">
-                <img src="../images/IMG_8446[1].jpg" alt="" class="img-responsive">
-            </div>
-            <div class="slide">
-                <img src="../images/IMG_8535[1].jpg" alt="" class="img-responsive">
-            </div>
-            <div class="slide">
-                <img src="../images/IMG_9084[1].jpg" alt="" class="img-responsive">
-            </div>
+        <div class="wrapper">
+            <ul id="scene" 
+                data-invert-x="false"
+                data-invert-y="false"
+                data-scalar-x="7"
+                data-scalar-y="7"
+                data-friction-x="0.2"
+                data-friction-y="0.2"
+                data-origin-x="0.5"
+                data-origin-y="0.5">
+                <li class="layer name community" data-depth="0.90">
+                    <h1>Notice board</h1>
+                </li>
+            </ul>
         </div>
-    </div>
+    </section>
+
+    <section class="noticeboard">
+        <p>Black and white cat named Spider is missing! Please call 0411661793 if you have seen our boy!</p>
+        <p>Hoons on roads! Call 000 </p>
+        <p>Dogs stolen! Call 000</p>
+        <p>Giving away red leather couch. Call or text 0437774774. Trish</p>
+
+    </section>
 
     <footer>
         <h1>Created by Tati Tait</h1>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../scripts/parallax.min.js"></script>   
-    <script src="../scripts/masonry.js"></script>
-    <script src="../scripts/slick.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+    <script src="../scripts/parallax.min.js"></script>
     <script src="../scripts/main.js"></script>
 
     <script>
         var scene = document.getElementById('scene');
         var parallax = new Parallax(scene);
     </script>
-
-
 </body>
 
 </html>
